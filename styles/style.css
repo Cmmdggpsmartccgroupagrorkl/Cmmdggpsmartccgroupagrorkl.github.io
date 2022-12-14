@@ -1,0 +1,10 @@
+.altn {
+    font-family: 'Times New Roman', Times, serif;
+    color: #3f48cc;
+}
+
+.article {
+    width: 80%;
+    left:0;
+    position: absolute;
+}
