@@ -2,3 +2,12 @@ body {
     font-family: Arial;
     font-size: 11pt;
 }
+
+.read-page.general.whole-container {
+    display: grid;
+  
+}
+
+.read-page.folder {
+    
+}
