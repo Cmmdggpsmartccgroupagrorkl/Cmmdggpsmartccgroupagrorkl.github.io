@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="../../styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/style-large.css" />
+
+    <title> Knowledge Base Construction </title>
+    <link rel="shortcut icon" href="images/logo.png" type="imgs/logo.png">
+
+</head>
+<body>
+    <div class="main">
+
+        <ul class="paper-list">
+
+            <h2>Survey</h2>
+
+            <li style="display: flex;">
+                <h3>
+                    📃<abbr title="2020"><a href="https://arxiv.org/abs/2002.00388v2">Survey on Knowledge Graphs: Representation, Accquisition and Applications</a></abbr><br />
+                    <span class="altn">Alternative link:</span><a href="https://github.com/Cmmdggpsmartccgroupagrorkl/Cmmdggpsmartccgroupagrorkl.github.io/blob/main/papers/2002.00388.pdf">2002.00388.pdf</a>
+                    🔍dependencies
+                </h3>
+            </li>
+            <li style="display: flex;">
+                <h3>📃<a href="http://www.vldb.org/pvldb/vol8/p1310-shin.pdf">Incremental Knowledge Base Construction Using DeepDive</a></h3>
+
+                <p>
+                    DeepDive的🐣引入ai variation~
+
+                    1. Grounded truth的Factual Gaph抽取基于了一些不同关系的relation组成。
+                    推荐Relation extraction 去理解此图基石
+
+                    2. 回顾传统文档抽取知识库构建工程，#更好贴合文章特性是DeepDive的指导思想。通过认真的feature抽取特征，比如HTML scraping — CSS数据吻合，pos tagging，linguistic parsing一些低级别自然语言问题，经过松散的dependencies加工贴合文章更深入，合情合理。
+
+                    3. 增益性衡量💧除了Delta Rules，本文的奇妙之处在于factual graph 经过variational approach输出为一个新图，在此incremental #inference 暗示使得图边缘edge赋能一些grounding rules。
+
+                    4. 3+3底层#tradeoff 可拓宽graph的空间韧性，在此由机器完成。Workplace工作压力下二因素折衷（比如#timeliness VS accuracy）可能会有很多员工感到难以承受。
+
+                    5. 最后是C++模型实现http://deepdive.stanford.edu/ 和实验设置，毕竟本模型在5个KBC系统上做了evaluation    🔍deep dive
+
+                </p><br /><br />
+            </li>
+            <li style="display: flex;">
+                <h3>📃<a href="https://pdfs.semanticscholar.org/e69b/0dd5c652a013de1e82e6c044a68a76d817de.pdf">A Survey of Techniques for Constructing Chinese Knowledge Graphs and Their Applications</a></h3>
+                <p>
+                    【科普知识导读】中文知识图谱背景诞生于相较传统思维更好的丝绸之路——“一带一路”，其中AI applications广泛吸引不少文化国家包括中国自己。
+
+                    兴趣之中的语义搜索除了在视觉领域大展伸手，在搜索引擎上作为查询结果的semantics，相比关键词匹配—知识图谱有更多细节信息。在此吐槽中文知识图谱总是做不起来的原因是中国人不恰当注重音形、字型，或者接受了高等教育后就忽视了基础教育。
+
+                    但是中文知识图谱构建规则丰富，构建细致规范，下图仅为示例。    🔍Chinese culture
+                </p><br /><br />
+            </li>
+            <li style="display: flex;">
+                <h3>📃<a href="https://www.researchgate.net/figure/Graph-view-of-the-Curation-Interface_fig3_328442534">See discussions, stats, and author profiles for this publication at: CurEx: A System for Extracting, Curating, and Exploring Domain-Specific Knowledge Graphs from Text</a></h3>
+                <p>
+                    【内容提要】一篇充满羊皮纸📰民风的水文~ 文章很小众，curation的数据管理有牧师的意思。开篇要做data integration，它可能至少包含extraction，低技术粗糙，#多模态。
+
+                    在处理structure和unstructure data过程中最好自动归并同一实体。另外一个是从报纸和报告中做抽取的标准方法是做命名实体识别，关系抽取（也就是KB认识的知识形式）。命名实体识别NER，Relation Extraction RELEX之后做entity linking实体链接EL。
+
+                    本文提出的CurEx作者认为模型更SOTA。根据民风的#吐司less性不是很好，系统选用Spark，分布式Cassandra和Neo4j #三种数据库，end-user使用场景典型。由数据库系统和#两接口 组成了正统数据库系统开发。在进入KB数据库之前同样会做一般结构数据库都会做的normalization和duplication。
+
+                    #CohEEL的哨声    🔍正统 🔍民风
+                </p><br /><br />
+            </li>
+
+            <h2>General Papers</h2>
+            <li style="display: flex;">
+                <h3>📃<a href="https://arxiv.org/pdf/2003.13230.pdf">AliCoCo: Alibaba E-commerce Cognitive Concept Net</a></h3>
+                <p>
+                    #Introduction to e-platform🐿️
+
+                    𝐀𝐥𝐢𝐂𝐨𝐂𝐨 𝐂𝐨𝐠𝐧𝐢𝐭𝐢𝐯𝐞 𝐂𝐨𝐧𝐜𝐞𝐩𝐭 𝐍𝐞𝐭: 𝐀𝐥𝐢-𝐞𝐜𝐨𝐦𝐦𝐞𝐫𝐜𝐞 𝐏𝐫𝐚𝐜𝐭𝐢𝐜𝐞
+                    ♧  ★🍭
+
+                    1_ 电商搜索体验：客户头脑里想的，可能是件很有深度的东西，实际是一种𝐭𝐲𝐩𝐞或者一类𝐜𝐚𝐭𝐞𝐠𝐨𝐫𝐲 #products 以及一些额外特征
+
+                    在这种场合下，客户会选择在电商平台之外做一些研究来narrow down精确匹配想要的产品，是另一种非智能。
+
+                    问题同样存在于物品推荐。一种推荐方式是基于购物篮历史，从电商召回一个小的相似物品选项集，通过打分模型scoring推荐出权值最高的物品。
+
+                    2_ 𝙰𝚕𝚒𝙲𝚘𝙲𝚘'𝚜 𝚃𝚇𝙽𝙼
+                    𝙲𝚊𝚝𝚎𝚐𝚘𝚛𝚢
+                    𝙱𝚛𝚊𝚗𝚍
+                    𝙲𝚘𝚕𝚘𝚛
+                    𝙳𝚎𝚜𝚒𝚐𝚗
+                    𝙵𝚞𝚗𝚌𝚝𝚒𝚘𝚗
+                    𝙼𝚊𝚝𝚎𝚛𝚒𝚊𝚕
+                    𝙿𝚊𝚝𝚝𝚎𝚛𝚗
+                    𝚂𝚑𝚊𝚙𝚎
+                    𝚂𝚖𝚎𝚕𝚕
+                    𝚃𝚊𝚜𝚝𝚎
+                    𝚂𝚝𝚢𝚕𝚎
+                    𝚃𝚒𝚖𝚎
+                    𝙻𝚘𝚌𝚊𝚝𝚒𝚘𝚗
+                    𝙸𝙿
+
+                    3_ 👺一个好的𝘌𝘤𝘰𝘮𝘮𝘦𝘳𝘤𝘦概念： 𝘊𝘳𝘪𝘵𝘦𝘳𝘪𝘢-
+                    1 𝘌-𝘤𝘰𝘮𝘮𝘦𝘳𝘤𝘦𝘔𝘦𝘢𝘯𝘪𝘯𝘨
+                    2 𝘊𝘰𝘩𝘦𝘳𝘦𝘯𝘤𝘦 3 𝘗𝘭𝘢𝘶𝘴𝘪𝘣𝘪𝘭𝘪𝘵𝘺 4 𝘊𝘭𝘢𝘳𝘪𝘵𝘺 5 𝘊𝘰𝘳𝘳𝘦𝘤𝘵𝘯𝘦𝘴𝘴
+                    图2结果典型案例“✞☠︎Outdoor Barbecue☠︎✞，𝙆𝙚𝙚𝙥 𝙬𝙖𝙧𝙢 𝙛𝙤𝙧 𝙠𝙞𝙙𝙨
+
+                    4_ 图3 matrix经验表，系统枢纽展示  <span class="altn">Alternative link:</span><a href="https://github.com/Cmmdggpsmartccgroupagrorkl/Cmmdggpsmartccgroupagrorkl.github.io/blob/main/papers/2003.13230.pdf">2003.13230.pdf</a>    🔍电商
+                </p><br /><br />
+            </li>
+            <li style="display: flex;">
+                <h3>📃<a href="https://gemslab.github.io/papers/safavi-2019-glimpse.pdf">Personalized Knowledge Graph Summarization: From the Cloud to Your Pocket</a></h3>
+                <p>
+                    个性化知识图谱推荐（上）——构建和个体读者兴趣最相关的稀疏子图
+
+                    图谱摘要主要根据查询效率（如果读者没找到最感兴趣的文章可能会继续搜索效率降低）、可视化效果及模式识别等目标实现。Grouping-based方法通常需要两两比较降低算法实现效率。
+
+                    一些图谱摘要方法在搜索图谱的同时葆有特定类别，和在搜索时会对知识图谱中的子图query，都受到相对保护。近来有针对用户或任务的输入方法，不直接处理query，这样又催生了新的一系列方法。
+
+                    本文图谱摘要框架GLIMPSE需要选择子图知识图谱，在此图谱抽样重要起来。该方法同样不直接处理query，而是因图谱性质削减成更小的子图。
+
+                    知识图谱方面最相关的工作是fact contextualization，实体标级，或摘要。原理是给定图谱中的实体知识或事实作为输入，输出#最有信息价值 、最相关的实体集合。此方法被作为本文方法的知识补充。
+
+                    个性化推荐方面：理论上需要从知识图谱中抓取额外辅助信息，目前并没有从KG中推荐个体感性的文章的工作。此外在个性化web搜索有广泛文献，这些工作更趋向于关注抽取或学习特征。相比之下，本方法更对摘要感兴趣，从文献中筛选下来只有个性化PageRank（PPR）方法最为通用。
+
+                    #information theory    🔍 digit brain
+                </p><br /><br />
+            </li>
+        </ul>
+
+
+    </div>
+    <button class="generate-spec-tag" onclick="window.open('Editor.html', 'editor', 'width=800, height=600')"> 🔍 </button><br />
+    <a href="KBC-intermediate.html">Back to intermediate Page</a> <br />
+    <a href="../../index.html">Back to home</a>
+</body>
+</html>
